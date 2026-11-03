@@ -1,0 +1,10 @@
+project: savantenvs/libarchive
+target: libarchive_rar5_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libarchive_rar5_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/libarchive_rar5_fuzzer
+    libfuzzer: true
+    timeout: 60
+    dictionary: /mayhem/mayhem/libarchive_rar5_fuzzer/libarchive_rar5_fuzzer.dict

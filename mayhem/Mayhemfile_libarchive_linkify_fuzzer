@@ -1,0 +1,6 @@
+project: savantenvs/libarchive
+target: libarchive_linkify_fuzzer
+cmds:
+  - cmd: /mayhem/libarchive_linkify_fuzzer
+    libfuzzer: true
+    timeout: 60

@@ -1,0 +1,9 @@
+project: savantenvs/libarchive
+target: libarchive_encryption_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libarchive_encryption_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/libarchive_encryption_fuzzer
+    libfuzzer: true
+    timeout: 60

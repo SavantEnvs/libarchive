@@ -1,0 +1,37 @@
+#mtree
+file type=file uid=18 mode=0123 size=3
+dir type=dir
+ file\040with\040space type=file uid=18
+ ..
+file\040with\040space type=file
+dir2 type=dir
+ dir3a type=dir
+  indir3a type=file
+dir2/fullindir2 type=file mode=0777
+  ..
+ indir2 type=file
+ dir3b type=dir
+  indir3b type=file
+  filename\\with\
+_esc\b\t\fapes type=file mode=0444 size=0
+  ..
+ ..
+notindir type=file
+dir2/fullindir2 mode=0644
+dir2/emptyfile type=file size=0x0
+dir2/smallfile type=file size=000000000000000000000000000001
+dir2/toosmallfile type=file size=-1
+dir2/bigfile type=file size=9223372036854775807
+dir2/toobigfile type=file size=9223372036854775808
+dir2/veryoldfile type=file time=-9223372036854775808
+dir2/toooldfile type=file time=-9223372036854775809
+dir2/md5file type=file md5digest=d41d8cd98f00b204e9800998ecf8427e               
+dir2/rmd160file type=file rmd160digest=da39a3ee5e6b4b0d3255bfef95601890afd80709         
+dir2/sha1file type=file sha1digest=da39a3ee5e6b4b0d3255bfef95601890afd80709     
+dir2/sha256file type=file sha256digest=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+dir2/sha384file type=file sha384digest=38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b
+dir2/sha512file type=file sha512digest=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
+dir2/md5tooshort type=file md5digest=d41d8cd98f00b204e9800998ecf8427
+dir2/md5toolong type=file md5digest=d41d8cd98f00b204e9800998ecf8427ea
+dir2/md5caphex type=file md5digest=D41D8CD98F00B204E9800998ECF8427E
+dir2/md5nothex type=file md5digest=q41d8cd98f00b204e9800998ecf8427e

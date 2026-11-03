@@ -1,0 +1,10 @@
+project: savantenvs/libarchive
+target: libarchive_warc_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libarchive_warc_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/libarchive_warc_fuzzer
+    libfuzzer: true
+    timeout: 60
+    dictionary: /mayhem/mayhem/libarchive_warc_fuzzer/libarchive_warc_fuzzer.dict

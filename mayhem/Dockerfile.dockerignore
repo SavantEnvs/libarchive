@@ -1,0 +1,7 @@
+# Keep the FULL repo (incl. .git history) in the build context. Upstream's tracked build/ directory
+# holds the cmake/autotools sources, so only the out-of-tree build dirs below are dropped.
+mayhem/build-fuzz/
+mayhem/build-test/
+**/__pycache__/
+.DS_Store
+*.swp

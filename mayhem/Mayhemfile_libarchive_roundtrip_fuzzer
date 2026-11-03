@@ -1,0 +1,6 @@
+project: savantenvs/libarchive
+target: libarchive_roundtrip_fuzzer
+cmds:
+  - cmd: /mayhem/libarchive_roundtrip_fuzzer
+    libfuzzer: true
+    timeout: 60

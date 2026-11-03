@@ -1,0 +1,6 @@
+project: savantenvs/libarchive
+target: libarchive_read_disk_fuzzer
+cmds:
+  - cmd: /mayhem/libarchive_read_disk_fuzzer
+    libfuzzer: true
+    timeout: 60

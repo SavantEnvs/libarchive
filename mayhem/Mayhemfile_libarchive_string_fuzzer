@@ -1,0 +1,6 @@
+project: savantenvs/libarchive
+target: libarchive_string_fuzzer
+cmds:
+  - cmd: /mayhem/libarchive_string_fuzzer
+    libfuzzer: true
+    timeout: 60

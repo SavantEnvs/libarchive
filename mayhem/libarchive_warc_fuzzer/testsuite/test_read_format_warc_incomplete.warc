@@ -1,0 +1,13 @@
+WARC/1.0
+WARC-Type: conversion
+WARC-Date: 2025-03-30T15:00:40Z
+Content-Length: 9223372036854775807
+
+WARC/1.0
+WARC-Type: resource
+WARC-Target-URI: file://readme.txt
+WARC-Date: 2025-03-30T15:00:40Z
+Content-Type: text/plain
+Content-Length: 38
+
+The readme.txt should not be visible

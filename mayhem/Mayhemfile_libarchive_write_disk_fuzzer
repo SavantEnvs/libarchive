@@ -1,0 +1,6 @@
+project: savantenvs/libarchive
+target: libarchive_write_disk_fuzzer
+cmds:
+  - cmd: /mayhem/libarchive_write_disk_fuzzer
+    libfuzzer: true
+    timeout: 60
